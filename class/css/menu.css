@@ -1,0 +1,222 @@
+﻿@charset "utf-8";
+
+body {
+	margin:0;
+	padding:0;
+}
+#menu{
+	margin-top:10px;
+	margin-bottom:10px;
+	border: 1px solid #464646;
+	background-color: #F8F8F8;
+	display:block;
+	width:250px;
+	padding-top:10px;
+	float: left;
+	/*overflow-y:scroll;
+	height:650px;*/
+}
+.menuItem{
+	/*margin-bottom:10px;
+	height:90px;*/
+	padding:5px;
+	display:block;
+	border-top:1px solid #999;
+}
+.thumbnail img{
+	/*vertical-align: top;*/
+}
+.menuItem:hover{
+	background-color:#FFF;
+}
+.menuItem a:link, .menuTxt a:visited{
+	font-weight:bold;
+	color:#333;
+	text-decoration:none;
+	font-size:12px;
+}
+.menuItem a:hover{
+	font-weight:bold;
+	color:#3C64A6;
+}
+.types{
+	display:block;
+	line-height:1.5em;
+}
+
+.types a:link, .types a:visited{
+	border:1px solid #d6d6d6; 
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-family:arial,helvetica,sans-serif;
+	padding: 3px 5px 3px 5px;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.8);
+	font-weight:bold; text-align: center;
+	color: #202020;
+	ackground-color: #efefef;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efefef), color-stop(100%, #dedede));
+	background-image: -webkit-linear-gradient(top, #efefef, #dedede);
+	background-image: -moz-linear-gradient(top, #efefef, #dedede);
+	background-image: -ms-linear-gradient(top, #efefef, #dedede);
+	background-image: -o-linear-gradient(top, #efefef, #dedede);
+	background-image: linear-gradient(top, #efefef, #dedede);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#efefef, endColorstr=#dedede);
+}
+
+.types a:hover{
+	border:1px solid #d6d6d6;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-family:arial,helvetica,sans-serif;
+	padding: 3px 5px 3px 5px;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.8);
+	font-weight:bold;
+	text-align: center; color: #E0E0E0;
+	background-color: #efefef;
+	background-color:#CEFA74;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8dbdb), color-stop(100%, #CEFA74));
+	background-image: -webkit-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -moz-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -ms-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -o-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: linear-gradient(top, #c8dbdb, #CEFA74);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c8dbdb, endColorstr=#CEFA74);
+	color:#222222;
+}
+
+.menuNo{
+	float:left;
+	width:20px;
+}
+.thumbnail{
+	display:block;
+	float:left;
+	width:120px;
+}
+.menuTxt{
+	display:block;
+	float:right;
+	padding:5px;
+	width:110px;
+}
+.menuItem{
+	display: inline-table;
+	width:240px;
+}
+#menuItem:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+
+.activemenu{
+	background-color:#BBB;
+}
+
+
+.en-page{
+	display:none;
+}
+.toggle_lang{
+	height:auto;
+	cursor:pointer;
+}
+.changelang{
+	display: inline;
+}
+.changelang .toggle_lang, 
+.changelang a:link, .changelang a:visited,
+#subPagesLink a{
+	text-decoration:none;
+	padding:3px 20px 3px 20px;
+	display:inline;
+	margin-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	font-weight:bold;
+	border:1px solid #95baba; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; font-family:arial,helvetica,sans-serif; 
+    margin-left:2px;
+    margin-right:5px;
+	min-width:50px;
+	background-color:#c8dbdb;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8dbdb), color-stop(100%, #a9c9c9));
+	background-image: -webkit-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -moz-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -ms-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -o-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: linear-gradient(top, #c8dbdb, #a9c9c9);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c8dbdb, endColorstr=#a9c9c9);
+	color:#333333;	
+}
+
+.changelang span.toggle_lang:hover{
+	color:#FFF;
+}
+.changelang a:hover,
+#subPagesLink a:hober{
+	background-color:#CEFA74;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8dbdb), color-stop(100%, #CEFA74));
+	background-image: -webkit-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -moz-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -ms-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -o-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: linear-gradient(top, #c8dbdb, #CEFA74);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c8dbdb, endColorstr=#CEFA74);
+	color:#222222;	
+}
+
+#activePattern{
+	background-color:#CEFA74;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8dbdb), color-stop(100%, #CEFA74));
+	background-image: -webkit-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -moz-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -ms-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: -o-linear-gradient(top, #c8dbdb, #CEFA74);
+	background-image: linear-gradient(top, #c8dbdb, #CEFA74);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c8dbdb, endColorstr=#CEFA74);
+	color:#222222;
+	border: 1px solid #888;
+}
+
+
+/*color.cssの175行目で設定されている　本来は#sub_menu aに割り当てられているが、aは使わないので、spanに変更*/
+#sub_menu span {
+    /*color: #333333;*/
+}
+
+#sub_menu span:hover {
+   /* color: #FFF;*/
+}
+
+/*もともとノブレスが設定したCSSには定義されていなかった*/
+.pro_inline{
+	cursor:pointer;
+}
+
+.changelang span.now_lang{
+	text-decoration:none;
+	padding:3px 20px 3px 20px;
+	display:inline;
+	margin-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	font-weight:bold;
+	border:1px solid #888; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; font-family:arial,helvetica,sans-serif; 
+	margin-left:2px;
+	margin-right:5px;
+	min-width:50px;
+	background: #EEE;
+	color: #111;
+	border: 1px solid #EEE;
+	border-left: 2px solid #BBB;
+	border-top: 2px solid #BBB;
+	-moz-box-shadow: -1px -1px 1px rgba(000,000,000,0.3),1px 1px 1px rgba(255,255,255,1);
+	-webkit-box-shadow: -1px -1px 1px rgba(000,000,000,0.3),1px 1px 1px rgba(255,255,255,1);
+	font-size: 14px;
+	cursor:default;
+}
+.changelang span.now_lang hover{
+	color:#111;
+}

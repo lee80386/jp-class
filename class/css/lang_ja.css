@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#ownLangButton, .ownLangDiv{
+	display:none;
+}
+
+#vocabularyButton, .vocabularyDiv{
+	display:none;
+}

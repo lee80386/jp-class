@@ -1,0 +1,505 @@
+﻿@charset "utf-8";
+/*タイプ別、画面サイズ別に関わりなく、dmodに共通なCSSの設定*/
+
+#wrapper{
+	margin:0 auto;
+	margin-top:10px;
+	width:1000px;
+}
+
+/*ヘッダーをまとめているDIV*/
+#headerWrapper{
+	background-color:#77bbdd;
+	border:1px solid #464646;
+}
+/*ヘッダーに表示するページのタイトル*/
+#pageTitle{
+	text-align:center;
+	font-size:24px;
+	color:#FFF;
+	padding-top:3px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight:bold;
+}
+
+/*ナビゲーションは、右と左に表示するものがあるので、それをまとめるdiv*/
+#naviWrapper{
+	background-color:#F0F0F0;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0F0F0), color-stop(100%, #CCC));
+	background-image: -webkit-linear-gradient(top, #F0F0F0, #CCC);
+	background-image: -moz-linear-gradient(top, #F0F0F0, #CCC);
+	background-image: -ms-linear-gradient(top, #F0F0F0, #CCC);
+	background-image: -o-linear-gradient(top, #F0F0F0, #CCC);
+	background-image: linear-gradient(top, #F0F0F0, #CCC);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#F0F0F0, endColorstr=#CCC);
+	padding:2px 0px 2px 0px;
+	border-top:1px solid #464646;
+	font-size:14px;
+}
+
+#navis span{
+    border-left: 1px solid  #333;
+	padding-left:1em;
+    margin-left: 1em;
+}
+
+#navis span:first-child, #navis span.ja-page,#navis span.en-page {
+    border-left: none;
+	padding-left:0;
+    margin-left: 5px;
+}
+
+#navis:after{
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;
+    clear: both;
+	visibility:hidden;
+}
+
+#topPageData .topimg{
+	display:block;
+	margin:auto;
+}
+
+#moviePane
+{
+    /*border:solid 1px green; */
+    width:320px;
+    float:left;
+    height:auto;
+    overflow:auto;
+}
+
+#dialogPane
+{
+    float:right;
+    width:465px;
+    height:auto;
+    overflow:auto;
+}
+
+/* */
+#infoCtrlPane
+{
+	display:block;
+    border:dashed 1px #D1CECA;
+    min-width:35px;
+    min-height:35px;
+	margin-top:10px;
+}
+
+#infoCtrlPane:after{
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;
+    clear: both;
+	visibility:hidden;
+}
+
+#infoCtrlPane button
+{
+	margin-top:3px;
+	padding:2px;
+}
+
+#textsView{
+	display:inline-block;
+	padding:10px 10px 0 0 ;
+}
+/*
+#movieOnOff.movieOff{
+	margin-top:8px;
+}
+*/
+#movieOnOff{
+	background-image:url("../img/movieOn.png");
+	background-repeat:no-repeat;
+	background-position:0px 2px;
+}
+#movieOnOff.navButton{
+	min-width:42px;
+	min-height: 31px;
+}
+#movieOnOff.movieOff{
+	background-image:url("../img/movieOff.png");
+	margin-top:8px;
+}
+
+#textOnOff{
+	background-image:url("../img/textOn.png");
+	background-repeat:no-repeat;
+	background-position:10px 0px;
+}
+#textOnOff.navButton{
+	min-width:40px;
+}
+#textOnOff.textOff{
+	background-image:url("../img/textOff.png");
+	margin-top:2px;
+}
+*/
+
+#dispSituation
+{
+    float:left;
+}
+
+#dispSituation
+{
+   /* margin-left:30px;*/
+}
+
+
+#pattern{
+	margin:1em 0 1em 0;
+}
+
+
+#selectLangDisp
+{
+    float:left;
+}
+#selectPartsDisp
+{
+	float:left;
+}
+#selectPartsDisp:after{
+	clear:left;
+}
+#configDisp
+{
+    float:left;
+}
+
+
+
+#situationTxtDiv
+{
+    position:absolute;
+    top:82px;
+    /*left:30px;*/
+    width:250px;
+    height:150px;
+    padding:20px;
+    border:20px;
+    display:none;
+    opacity:0.85;
+	border:1px solid #787878; -webkit-border-radius: 5px; -moz-border-radius: 5px;border-radius: 5px; font-family:arial,helvetica,sans-serif;
+	background-color:#c8dbdb;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8dbdb), color-stop(100%, #a9c9c9));
+	background-image: -webkit-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -moz-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -ms-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -o-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: linear-gradient(top, #c8dbdb, #a9c9c9);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c8dbdb, endColorstr=#a9c9c9);
+}
+#placeTitleTxt
+{
+    font-weight:bold;
+}
+#situationTitleTxt
+{
+    font-weight:bold;
+}
+
+.navButton, .dispPartButton
+{
+	border:1px solid #787878; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; font-family:arial,helvetica,sans-serif;
+    margin-left:2px;
+    margin-right:2px;
+    min-height:30px;
+    min-width:60px;
+	background-color:#c8dbdb;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c8dbdb), color-stop(100%, #a9c9c9));
+	background-image: -webkit-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -moz-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -ms-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: -o-linear-gradient(top, #c8dbdb, #a9c9c9);
+	background-image: linear-gradient(top, #c8dbdb, #a9c9c9);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c8dbdb, endColorstr=#a9c9c9);
+	color:#222222;
+	vertical-align:middle;
+}
+
+.buttonoff
+{
+	border:1px solid #BABABA; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; font-family:arial,helvetica,sans-serif;
+    margin-left:2px;
+    margin-right:2px;
+    min-height:30px;
+    min-width:60px;
+	background-color:#CCC;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #DDDFF0), color-stop(100%, #C6C8CF));
+	background-image: -webkit-linear-gradient(top, #DDDFF0, #C6C8CF);
+	background-image: -moz-linear-gradient(top, #DDDFF0, #C6C8CF);
+	background-image: -ms-linear-gradient(top, #DDDFF0, #C6C8CF);
+	background-image: -o-linear-gradient(top, #DDDFF0, #C6C8CF);
+	background-image: linear-gradient(top, #DDDFF0, #C6C8CF);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#DDDFF0, endColorstr=#C6C8CF);
+	color:#888;
+	vertical-align:top;
+}
+
+.partImgBtn
+{
+    display:inline;
+}
+.selectPartLabel_p, .selectPartLabel_t
+{
+    margin-left:5px;
+    vertical-align:top;
+}
+.selectPartLabelOff{
+	display:none;
+}
+
+
+
+/* */
+#infoPane
+{
+}
+#situation
+{
+}
+#selectLangPane
+{
+}
+#selcctpartPnae
+{
+}
+#configPane
+{
+}
+
+.lineDiv
+{
+    clear:left;
+/* height の値が auto で overflow の値が visible 以外だと高さはフロートを含むように自動的に広げられる。*/
+    width:auto;
+    height:auto;
+    overflow:auto;
+	line-height:1.4em;
+	padding:5px;
+
+	border-top: 1px dashed #EEEEEE;
+}
+.lineDiv:nth-of-type(1){
+	border:none;
+}
+
+.lineDiv:nth-of-type(2n){
+	background-color:#EDE8E4;
+}
+
+.lineImg
+{
+    width:25px;
+    float:left;
+    width:auto;
+	padding-right:5px;
+	cursor:pointer;
+}
+.stsDiv
+{
+    float:left;
+    width:430px;
+}
+.stDiv
+{
+    clear:left;
+    height:auto;
+    /*
+    width:430px;
+	overflow:auto;*/
+
+}
+.stCtrlDiv
+{
+    float:left;
+    width:20px;
+}
+.stDataDiv
+{
+    width:410px;
+    float:left;
+
+}
+.stDataDiv:hover{
+	background-color:#EEE;
+}
+
+.stDataDiv div{
+	cursor:pointer;
+}
+
+
+
+
+
+.partbutton{
+	display: block;
+	font-size:1em;
+	height:1.1em;
+	line-height:1.1em;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 0.5em;
+	font-family:arial,helvetica,sans-serif;
+	padding: 0px 3px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+	font-weight:bold;
+	text-align: center;
+	center; color: #FFFFFF;
+}
+
+.m_a_on, .m_b_on, .m_c_on, .m_d_on{
+	border:1px solid #085aff;
+	background-color: #3B7CFF;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3B7CFF), color-stop(100%, #4881B3));
+	background-image: -webkit-linear-gradient(top, #3B7CFF, #4881B3);
+	background-image: -moz-linear-gradient(top, #3B7CFF, #4881B3);
+	background-image: -ms-linear-gradient(top, #3B7CFF, #4881B3);
+	background-image: -o-linear-gradient(top, #3B7CFF, #4881B3);
+	background-image: linear-gradient(top, #3B7CFF, #4881B3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3B7CFF, endColorstr=#4881B3);
+}
+
+.f_a_on, .f_b_on, .f_c_on, .f_d_on{
+	border:1px solid #cd0909;
+	background-color: #F51414;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F51414), color-stop(100%, #E81C59));
+	background-image: -webkit-linear-gradient(top, #F51414, #E81C59);
+	background-image: -moz-linear-gradient(top, #F51414, #E81C59);
+	background-image: -ms-linear-gradient(top, #F51414, #E81C59);
+	background-image: -o-linear-gradient(top, #F51414, #E81C59);
+	background-image: linear-gradient(top, #F51414, #E81C59);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#F51414, endColorstr=#E81C59);
+}
+
+.dispPartButton .partbutton{
+	display:inline;
+}
+
+
+#infoViewButton{
+	display:inline-block;
+	*display: inline;
+	*zoom: 1;
+
+	/*border:1px solid #FFFFFF; -webkit-border-radius: 20px;*/
+	width:18px; -moz-border-radius: 20px;border-radius: 20px; font-family:arial,helvetica,sans-serif; padding: 6px 5px 6px 9px; text-shadow: -1px -1px 0 rgba(0,0,0,0.5);font-weight:bold; text-align: center; color: #FFFFFF;
+}
+#infoViewButton:hover{
+	background-color:#CCC;
+}
+#triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 18px solid #666;
+	border-bottom: 10px solid transparent;
+	display:block;
+}
+.cright{
+	font-size:80%;
+	text-align:center;
+}
+
+#footer2{
+	margin-top:10px;
+}
+
+#container.container:nth-child(2){
+	display:none;
+}
+
+/*語彙一覧ページと発音一覧ページ用開始*/
+#vocabularyTbl, #pronTbl{
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#vocabularyTbl th, #pronTbl th{
+	background-color:#42686F;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	border-right:1px solid #FFF;
+	white-space:nowrap;
+	padding:0.5em 0 0.5em 0;
+}
+#vocabularyTbl th:first-child, #pronTbl th:first-child{
+	border-left:1px solid #617D8B;
+}
+#vocabularyTbl th:last-child, #pronTbl th:last-child{
+	border:none;
+}
+#vocabularyTbl tr:nth-child(2n-1), #pronTbl tr:nth-child(2n-1){
+	background-color:#CFE2DF;
+}
+
+#vocabularyTbl td, #pronTbl td{
+	border-left:1px solid #888;
+	border-bottom:1px solid #888;
+	padding:0.2em;
+	vertical-align:top;
+}
+#vocabularyTbl td:last-child, #pronTbl td:last-child{
+	border-right:1px solid #888;
+}
+.pTblTran{
+	font-size:85%;
+	color:#333;
+}
+/*語彙一覧ページと発音一覧ページ用終了*/
+
+#subPagesLink{
+	padding-left:10px;
+	padding-top:5px;
+	height:25px;
+	text-align:right;
+	display:none;
+}
+
+
+/*発音・語彙モジュールへのリンクのボタン*/
+a.comparison_button{
+	display:inline-block;
+	width:350px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	margin:10px;
+	padding: 20px 0;
+	text-decoration:none;
+	color: #FFF;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+	-webkit-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+a.compP{
+	background: -moz-linear-gradient(top,#f9bd41, #f9b02a 50%,#f59a05 50%,#f7ac25);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9bd41), color-stop(0.5,#f9b02a), color-stop(0.5,#f59a05), to(#f7ac25));
+	border: 1px solid #ff8151;
+}
+
+a.compP:hover{
+	background: -moz-linear-gradient(top,#fce39e, #fcd467 50%,#f8ba13 50%,#facf5b);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fce39e), color-stop(0.5,#fcd467), color-stop(0.5,#f8ba13), to(#facf5b));
+	border: 1px solid #ff8151;
+}
+
+a.compV{
+	background: -moz-linear-gradient(top,#BFD9E5, #3D95B7 50%,#0080B3 50%,#0099CC);
+	background: -webkit-gradient(linear, left top, left bottom, from(#BFD9E5), color-stop(0.5,#3D95B7), color-stop(0.5,#0080B3), to(#0099CC));
+	border: 1px solid #0099CC;
+}
+
+a.compV:hover{
+	background: -moz-linear-gradient(top,#d8e8f3, #b7d8ef 50%,#92c8ed 50%,#bbdef5);
+	background: -webkit-gradient(linear, left top, left bottom, from(#d8e8f3), color-stop(0.5,#b7d8ef), color-stop(0.5,#92c8ed), to(#bbdef5));
+	border: 1px solid #0099CC;
+}

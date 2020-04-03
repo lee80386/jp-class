@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+@import "dmod.css";
+/*語彙と初尾のページ用*/
+
+#sub_menu {
+    background-color: #d1ceca;
+}
+/*===============================================
+●style.css 画面の横幅が769px以上
+===============================================*/
+@media screen and (min-width: 1024px){
+#vocabularyTbl, #pronTbl {
+	width: 980px;
+}
+}
+
+/*===============================================
+●tablet.css 画面の横幅が768pxまで
+===============================================*/
+@media screen and (max-width: 1023px){
+#vocabularyTbl, #pronTbl {
+/*	width: 725px;*/
+}
+}
+
+/*===============================================
+●smart.css  画面の横幅が640pxまで
+===============================================*/
+@media screen and (max-width:640px){
+#vocabularyTbl, #pronTbl {
+/*	width: 600px;*/
+}
+}
