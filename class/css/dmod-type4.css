@@ -1,0 +1,55 @@
+﻿@charset "utf-8";
+@import "dmod.css";
+
+#infoCtrlPane{
+	margin-top:0px;
+}
+#moviePane,  #dialogPane{
+	margin-top:5px;
+}
+
+
+#infoCtrlPane, #dialogPane{
+	display:none;
+}
+
+#sub_menu{
+	background-color:#d1ceca;
+}
+#moviePane{
+	width:100%;
+}
+#moviePane .media{
+	width:600px;
+	margin:0 auto;
+}
+
+#dialogVideoCtrl{
+	width:600px;
+	height:440px;
+}
+
+#dia_video_btn_2{
+	display:none;
+}
+#textScroll{
+	display:none;
+}
+@media screen and (max-width:640px){
+
+#moviePane .media{
+	width:100%;
+	margin:0 auto;
+}
+
+#dialogVideoCtrl{
+	width:100%;
+	height:auto;
+}
+
+
+
+
+
+
+}

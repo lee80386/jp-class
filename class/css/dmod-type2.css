@@ -1,0 +1,134 @@
+﻿@charset "utf-8";
+@import "dmod.css";
+
+.dialogAudioCtrl{
+	margin-top:40px;
+}
+
+#sub_menu{
+	background-color:#d1ceca;
+}
+
+#moviePane{
+	/*float:none;
+	border:none;*/
+	display:none;
+}
+
+#dialogPane, .lineDiv, .stDiv, .stsDiv{
+	width:auto;
+}
+
+#dialogPane{
+	font-size:200%;
+	margin-left:0;
+	border: 1px solid #464646;
+	float:none;
+}
+
+#dialogAudioCtrl{
+	margin-top:10px;
+}
+#menu{
+}
+#mainContents{
+	width:720px;
+	padding-left:10px;
+	float:left;
+}
+#dialogVideoCtrl{
+	width:0px;
+	height:0px;
+}
+.stDataDiv{
+	width:auto;
+}
+#moviePane{
+	margin-top:5px;
+}
+.partbutton {
+    padding: 0 5px;
+}
+
+#dia_video_btn_2{
+	display:block;
+	float:none;
+}
+
+#dia_video_btn_2 img{
+	cursor:pointer;
+}
+
+/*===============================================
+●style.css 画面の横幅が769px以上
+===============================================*/
+@media screen and (min-width: 1024px){
+.stsDiv{
+	width:931px;
+}
+.stDataDiv {
+    width: 911px;
+}
+}
+/*===============================================
+●tablet.css 画面の横幅が768pxまで
+===============================================*/
+@media screen and (max-width: 1023px){
+h1, #t_path3{
+	height:auto;
+}
+
+#naviLeft, #naviRight{
+	width:358px;
+	padding: 2px;
+}
+
+#dialogPane{
+	float:none;
+	width:auto;
+	margin:0px;
+}
+
+.stsDiv{
+	width:676px;
+}
+
+.stDataDiv{
+	width:656px;
+}
+}
+/*===============================================
+●smart.css  画面の横幅が640pxまで
+===============================================*/
+@media screen and (max-width:640px){
+h1{
+	height:auto;
+}
+
+#t_path3 div{
+	width:100%;
+}
+
+#naviRight{
+	text-align:left;
+}
+
+#dialogPane{
+	float:none;
+	width:100%;
+	margin:0px;
+}
+
+.lineDiv{
+	width:auto;
+}
+
+.stsDiv{
+	width:100%;
+}
+
+.stDataDiv{
+	width:100%;
+}
+
+}

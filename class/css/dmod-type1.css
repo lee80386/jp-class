@@ -1,0 +1,172 @@
+﻿@charset "utf-8";
+@import "dmod.css";
+
+#sub_menu{
+	 background-color: #d1ceca;
+}
+.lineImg, .stCtrlDiv, .stDiv{
+	display:none;
+}
+.stDiv{
+	font-size:200%;
+}
+#dialogPane{
+	margin:5px 0 0 0px;
+	float:none;
+}
+#mainContents{
+	width:700px;
+	margin-left:10px;
+	float:left;
+}
+#dialogPane{
+	width:640px;
+	margin:0 auto;
+}
+
+.lineDiv{
+	width:auto;
+}
+.stDiv, .stDataDiv{
+	width:640px;
+}
+
+.stDataDiv:hover{
+	background-color:#FFF;
+}
+
+#moviePane{
+	width:100%;
+}
+
+#moviePane .media{
+	width:640px;
+	margin:0 auto;
+}
+
+#dialogVideoCtrl{
+	height:470px;
+	width:640px;
+}
+#moviePane{
+	width:100%;
+	padding: 5px 0 0;
+}
+.lineDiv{
+	line-height:normal;
+	padding:0;
+	border:none;
+}
+.lineDiv:nth-of-type(2n){
+	background-color:#FFF;
+}
+
+#dia_video_btn_2{
+	display:none;
+}
+#textScroll{
+	display:none;
+}
+/*===============================================
+●style.css 画面の横幅が769px以上
+===============================================*/
+@media screen and (min-width: 1024px){
+.lineDiv{
+	width:auto;
+}
+
+.stsDiv{
+	width:640px;
+}
+}
+/*===============================================
+●tablet.css 画面の横幅が768pxまで
+===============================================*/
+@media screen and (max-width: 1023px){
+h1, #t_path3{
+	height:auto;
+}
+
+#naviLeft, #naviRight{
+	width:358px;
+	padding: 2px;
+}
+
+#moviePane{
+    width: 100%;
+}
+
+#moviePane .media{
+	width:450px;
+	margin:0 auto;
+}
+
+#dialogVideoCtrl {
+    height: 330px;
+    width: 450px;
+}
+
+.lineDiv{
+	width:auto;
+}
+
+.stDiv, 
+.stsDiv,
+.stDataDiv{
+	width:465px;
+}
+
+.stDataDiv{
+	width:410px;
+}
+}
+/*===============================================
+●smart.css  画面の横幅が640pxまで
+===============================================*/
+@media screen and (max-width:640px){
+h1{
+	height:auto;
+}
+
+#t_path3 div{
+	width:100%;
+}
+
+#naviRight{
+	text-align:left;
+}
+
+
+#moviePane{
+    width: 100%;
+}
+
+#moviePane .media{
+	width:100%;
+	margin:0 auto;
+}
+
+#dialogVideoCtrl {
+    height: auto;
+    width: 100%;
+}
+
+#dialogPane{
+	float:none;
+	width:100%;
+	margin:0px;
+}
+
+.lineDiv{
+	width:auto;
+}
+
+.stsDiv, .stDiv{
+	width:100%;
+}
+
+.stDataDiv{
+	width:100%;
+}
+
+}
